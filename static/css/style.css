@@ -120,8 +120,6 @@ section h2::after {
   color: var(--light-color);
   font-size: 0.95rem;
   letter-spacing: 0.3px;
-  position: sticky;
-  top: 0;
 }
 
 .topbar i {
