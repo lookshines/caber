@@ -1,0 +1,499 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caber Inspection Services LTD</title>
+    <!--<link rel="icon" type="image/x-icon" href="">-->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Custome css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar sticky-top py-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-3">
+                <span class="d-flex align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    +234 818 3061
+                </span>
+                <span class="d-flex align-items-center">
+                    <i class="fa fa-envelope me-2"></i>
+                    <a href="mailto:info@caberinspections.com" class="text-decoration-none">
+                        info@caberinspections.com
+                    </a>
+                </span>
+                <span class="d-flex align-items-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    13A, Forcados Road, 
+                    Apapa GRA,
+                    Lagos.
+                </span>   
+            </div>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom border-top py-3">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand d-flex flex-column flex-sm-row align-items-center text-center" href="#">
+                <img src="{% static 'images/logo-no-bg.svg' %}" alt="logo" class="me-sm-2 mb-2 mb-sm-0" style="height: 40px;">
+                <div class="brand-text">
+                    <span class="fw-semibold">Carber</span>
+                    <span class="text-muted">Inspection Services LTD</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-3"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item me-3"><a class="nav-link" href="">About</a></li>
+                    <li class="nav-item me-3"><a class="nav-link" href="">Services</a></li>
+                    <li class="nav-item me-3"><a class="nav-link" href="">HSE</a></li>
+                    <li class="nav-item me-3"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container-fluid">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="{% static 'images/hero/hero-image-1.jpg' %}" class="d-block w-100" alt="vessel">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{% static 'images/hero/hero-image-2.jpg' %}" class="d-block w-100" alt="oil-depot">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{% static 'images/hero/hero-image-3.jpg' %}" class="d-block w-100" alt="high-sea">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Service Section -->
+    <section class="services py-5" id="services">
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="row mb-4 px-5">
+                <div class="col-12 col-md-6">
+                    <h2 class="fw-semibold">Core Services</h2>
+                </div>
+            </div>
+
+            <div class="row align-items-start gy-5">
+                <!-- Left Column -->
+                <div class="col-lg-6 px-3">
+                    <p class="mb-4 px-5 fade-right">
+                        At CABER Inspection Services Ltd, we deliver reliable inspection, testing, certification, and verification services across industries to ensure quality, safety, and compliance. Our expertise covers crude oil and gas inspection, bulk cargo verification, product certification, and shipping logistics. With advanced laboratories and experienced professionals, we provide accurate, transparent, and internationally compliant results that build trust and support seamless trade operations.
+                    </p>
+
+                    <!-- Image Grid -->
+                    <div class="row g-3 text-center px-5 image-group fade-up">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <img src="{% static 'images/services/oil-worker.jpg' %}" alt="Service Image 1" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <img src="{% static 'images/services/shipping-logistics.png' %}" alt="Service Image 2" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <img src="{% static 'images/services/inspection.png' %}" alt="Service Image 3" class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6 px-5">
+                    <ul class="list-unstyled list-group fade-up">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#" class="">Inspection of Bulk Cargoes</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#" class="">Crude Oil and Gas Inspection</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#" class="">Certification of Manufactured and Semi-Manufactured Products</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#" class="">Shipping Logistics & Protocols</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#" class="">Custody Transfer Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Side (Image + Mission Text) -->
+                <div class="col-lg-6 position-relative">
+                    <div class="about-image" style="background-image: url('{% static "images/about/about.jpg" %}'); background-size: cover; background-position: center; min-height: 350px; border-radius: 6px;">
+                        <div class="px-4">
+                            <p class="lead fst-italic mb-0">
+                            We are committed to safeguarding value, ensuring compliance, and empowering trade through accurate and independent inspections.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (About Text) -->
+                <div class="right-side col-lg-6">
+                    <h2 class="mb-3">About Caber</h2>
+                    <div class="fade-left">
+                        <p class="mb-3 ">
+                        At CABER Inspection Services Ltd, we are a proudly Nigerian-owned inspection company delivering trusted inspection, testing, certification, and verification services across multiple industries.
+                        </p>
+                        <p class="mb-3">
+                        With decades of combined experience, our experts ensure that every product, shipment, and operation meets international standards of quality, safety, and compliance. Through strong partnerships with global laboratories, we blend local knowledge with world-class expertise to provide accurate and reliable results.
+                        </p>
+                        <p class="mb-0">
+                        Supported by state-of-the-art laboratories and a multidisciplinary team of professionals, CABER offers complete technical assurance — from production quality control to trade verification and compliance audits. We remain committed to transparency, integrity, and regulatory excellence, helping clients achieve confidence and value in every transaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+
+    <!-- Fun Fact Section -->
+    <section class="funfact py-5" id="funfact">
+        <div class="container">
+            <div class="row text-center gy-4">
+            
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=21>0</h1>
+                    <p class="mb-0">Completed Projects</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=32>0</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=15>0</h1>
+                    <p class="mb-0">Our Awards</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=3000>0</h1>
+                    <p class="mb-0">Satisfied Employees</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Fun Fact Section -->
+
+    <!-- Process Section -->
+    <section class="process py-5" id="process" style="background-image: url('{% static "images/process/process-bg.png" %}')">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold mb-2">Our Process</h2>
+                <p class="mb-0 mx-auto" style="max-width: 700px;">
+                    At CABER Inspection Services Ltd, we follow a systematic process built on precision, transparency, and compliance.
+                    From assessment and sampling to laboratory testing and certification, every stage ensures accuracy and client confidence.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="row justify-content-center align-items-stretch g-4 text-center fade-up">
+
+                <!-- Step 1 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-2">Step 1</h5>
+                            <h6 class="fw-semibold mb-2">Assessment & Planning</h6>
+                            <p class="small mb-0">
+                            Understanding project requirements, identifying key objectives, and defining inspection parameters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-2">Step 2</h5>
+                            <h6 class="fw-semibold mb-2">Inspection & Sampling</h6>
+                            <p class="small mb-0">
+                            Field inspections and sample collection following safety and international standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-2">Step 3</h5>
+                            <h6 class="fw-semibold mb-2">Testing & Verification</h6>
+                            <p class="small mb-0">
+                            Laboratory analysis and verification to ensure compliance with international benchmarks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-2">Step 4</h5>
+                            <h6 class="fw-semibold mb-2">Certification & Reporting</h6>
+                            <p class="small mb-0">
+                            Issuing reports and certifications, providing complete transparency and client assurance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Process Section -->
+
+    <!-- Contact Form Section -->
+    <section class="contactform py-5" id="contactform">
+        <div class="container">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="">Contact Us</h2>
+                <p class="mb-0">Leave us a message</p>
+            </div>
+
+            <div class="row align-items-center gy-4">
+            
+                <!-- Contact Form -->
+                <div class="col-12 col-lg-6 fade-right">
+                    <form class="p-3 border rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your full name" 
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            name="email" 
+                            placeholder="your@email.com" 
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input 
+                            type="tel" 
+                            class="form-control" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="Your phone number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea 
+                            class="form-control" 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            placeholder="Write your message..." 
+                            required></textarea>
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-outline-secondary px-4">Send Message</button>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Image or Contact Illustration -->
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="{% static 'images/contact-form/contact-us-img.png' %}" alt="Contact Illustration" class="img-fluid rounded fade-left" style="max-height: 400px;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Form Section -->
+
+    <!-- Contact Info Section -->
+    <section class="contactinfo position-relative" id="contactinfo">
+        <div class="container position-relative">
+            <div class="row justify-content-center text-center gx-4 gy-4 fade-up">
+
+                <!-- Location -->
+                <div class="col-12 col-md-3">
+                    <div class="contact-card p-4">
+                        <div class="icon-wrapper mb-3 position-relative">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Lagos – Head Office</h3>
+                        <p class="mb-0">
+                            13A, Forcados Road,<br>
+                            Apapa GRA,<br>
+                            Lagos, Nigeria.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="col-12 col-md-3">
+                    <div class="contact-card p-4">
+                        <div class="icon-wrapper mb-3 position-relative">
+                            <i class="fa-solid fa-location-crosshairs"></i></i>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Port Harcourt Eastern Zone</h3>
+                        <p class="mb-0">
+                            302B Port Harcourt/ Aba Expressway<br>
+                            Port Harcourt<br>
+                            Rivers Sate, Nigeria.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-12 col-md-3">
+                    <div class="contact-card p-4">
+                    <div class="icon-wrapper mb-3 position-relative">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="h5 fw-semibold mb-2">Email</h3>
+                    <p class="mb-0">info@caberinspection.com</p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-12 col-md-3">
+                    <div class="contact-card p-4">
+                    <div class="icon-wrapper mb-3 position-relative">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="h5 fw-semibold mb-2">Phone</h3>
+                    <p class="mb-0">+234 818 3061</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Info Section -->
+    
+    <!-- Footer Section -->
+    <footer class="footer py-5" id="footer">
+        <div class="container-fluid">
+            <div class="row gy-4">
+
+                <!-- Company Info -->
+                <div class="col-12 col-md-4">
+                    <img src="{% static 'images/footer-logo-no-bg.svg' %}" alt="footer-logo" class="mb-3 px-4" style="max-width: 150px;">
+                    <p class="small mb-0 px-4">
+                    CABER INSPECTION LIMITED is a wholly Nigerian-owned, professional, and independent inspection company with strong international technical partnerships.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-4">
+                    <h5 class="fw-semibold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled mb-4">
+                    <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">About</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">Services</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">HSE</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">Contact</a></li>
+                    </ul>
+
+                    <a href="" class="text-decoration-none"><h6 class="fw-semibold">Staff Mail</h6></a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-6 col-md-4">
+                    <h5 class="fw-semibold mb-3">Contact</h5>
+                    <ul class="list-unstyled small mb-4">
+                    <li class="mb-2">
+                        Lagos – Head Office<br>
+                        13A, Forcados Road, Apapa GRA, Lagos.
+                    </li>
+                    <li class="mb-2">info@caberinspection.com</li>
+                    <li class="mb-0">+234 818 3061</li>
+                    </ul>
+                </div>
+
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="row mt-4 border-top pt-3">
+                    <div class="col text-center small">
+                        <p class="mb-0">
+                        &copy; 2025 CABER Inspection Services | Powered by CABER Inspection Services
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <button id="backToTop" class="btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/myscripts.js' %}"></script>
+</body>
+</html>

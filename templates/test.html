@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dvhowells Services</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    /* ===== Custom Styles ===== */
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Topbar */
+    .topbar {
+      background: #003366;
+      color: #fff;
+      font-size: 14px;
+      padding: 6px 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand span {
+      color: #ff9900;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #ff9900 !important;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .btn-custom {
+      background-color: #ff9900;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #e68a00;
+    }
+
+    /* Section Headings */
+    section {
+      padding: 80px 20px;
+    }
+
+    section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    /* Services */
+    .service-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Top Bar ===== -->
+  <div class="topbar text-center">
+    <div class="container">
+      <span class="me-3"><i class="fa fa-phone"></i> +234 807 680 2201</span>
+      <span><i class="fa fa-envelope"></i> info@dvhowellsservices.com</span>
+    </div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Dvhowells <span>Services</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hse">HSE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Reliable Inspection & Certification Services</h1>
+      <p class="mt-3 mb-4">We deliver high-quality, professional inspection and verification for oil, gas, and cargo operations across Nigeria.</p>
+      <a href="#contact" class="btn btn-custom">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <p class="mt-3">DVHowells Services provides independent inspection and verification services in the oil and gas sector. We ensure transparency and accuracy in every process we oversee, maintaining integrity and professionalism as our core values.</p>
+    </div>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services" class="bg-light">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="service-card h-100">
+            <h5>Crude Oil & Gas Inspection</h5>
+            <p>Providing quality and quantity inspection for crude oil, condensate, and LPG cargoes.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-card h-100">
+            <h5>Laboratory Testing</h5>
+            <p>Certified testing of petroleum products to meet international standards.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-card h-100">
+            <h5>Cargo Supervision</h5>
+            <p>Independent monitoring of bulk cargo loading and discharge operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HSE Section ===== -->
+  <section id="hse">
+    <div class="container text-center">
+      <h2>Health, Safety & Environment (HSE)</h2>
+      <p class="mt-3">We are committed to maintaining the highest HSE standards in all our operations. Our staff are trained and equipped to ensure a safe and sustainable working environment.</p>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="bg-light">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p class="mt-3">Suite FF02, Aminasia Trade Centre, 4 Kandi Close, off Aminu Kano Way, Wuse 2, Abuja, Nigeria</p>
+      <p><strong>Phone:</strong> +234 807 680 2201</p>
+      <p><strong>Email:</strong> info@dvhowellsservices.com</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DVHowells Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
