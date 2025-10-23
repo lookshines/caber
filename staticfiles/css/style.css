@@ -11,7 +11,7 @@
 
 /* ===== GLOBAL TYPOGRAPHY ===== */
 html {
-  font-size: 20px; /* increases all text slightly for better legibility */
+  font-size: 16px; /* increases all text slightly for better legibility */
 }
 
 body {
@@ -120,9 +120,6 @@ section h2::after {
   color: var(--light-color);
   font-size: 0.95rem;
   letter-spacing: 0.3px;
-  position: sticky;
-  top: 0;
-  z-index: 1030;
 }
 
 .topbar i {
@@ -161,9 +158,6 @@ section h2::after {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   transition: background-color 0.3s ease;
-  position: sticky;
-  z-index: 1020;
-  top: 60px; /* height of topbar */
 }
 
 /* Brand Text */
