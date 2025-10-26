@@ -1,0 +1,46 @@
+<svg width="820" height="260" viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hull -->
+  <polygon points="780,200 130,200 60,170 130,140 780,140" fill="#0A3D91" />
+  
+  <!-- Red Waterline Strip -->
+  <polygon points="780,200 130,200 60,185 130,175 780,175" fill="#D3222A" />
+  
+  <!-- Containers Group (Editable Colors) -->
+  <g id="containers">
+    <!-- Bottom Row -->
+    <rect x="160" y="105" width="70" height="40" fill="#0A3D91" />
+    <rect x="235" y="105" width="70" height="40" fill="#D3222A" />
+    <rect x="310" y="105" width="70" height="40" fill="#0A3D91" />
+    <rect x="385" y="105" width="70" height="40" fill="#D3222A" />
+    <rect x="460" y="105" width="70" height="40" fill="#0A3D91" />
+    <rect x="535" y="105" width="70" height="40" fill="#D3222A" />
+    <rect x="610" y="105" width="70" height="40" fill="#0A3D91" />
+    
+    <!-- Middle Row -->
+    <rect x="200" y="65" width="70" height="40" fill="#D3222A" />
+    <rect x="275" y="65" width="70" height="40" fill="#0A3D91" />
+    <rect x="350" y="65" width="70" height="40" fill="#D3222A" />
+    <rect x="425" y="65" width="70" height="40" fill="#0A3D91" />
+    <rect x="500" y="65" width="70" height="40" fill="#D3222A" />
+    
+    <!-- Top Row -->
+    <rect x="315" y="30" width="70" height="35" fill="#0A3D91" />
+    <rect x="390" y="30" width="70" height="35" fill="#D3222A" />
+  </g>
+
+  <!-- Bridge -->
+  <rect x="670" y="60" width="90" height="80" fill="#FFFFFF" rx="4" />
+  
+  <!-- Bridge Windows -->
+  <g id="windows">
+    <rect x="685" y="75" width="20" height="20" fill="#0A3D91" rx="2" />
+    <rect x="710" y="75" width="20" height="20" fill="#0A3D91" rx="2" />
+    <rect x="735" y="75" width="20" height="20" fill="#0A3D91" rx="2" />
+  </g>
+
+  <!-- Chimney -->
+  <rect x="720" y="30" width="25" height="30" fill="#0A3D91" />
+  
+  <!-- Rail -->
+  <rect x="660" y="140" width="120" height="5" fill="#FFFFFF" />
+</svg>

@@ -1,0 +1,61 @@
+<svg width="840" height="260" viewBox="0 0 840 260" xmlns="http://www.w3.org/2000/svg">
+  <!-- Smooth Curved Hull -->
+  <path d="M780 140 
+           H150 
+           Q110 145 75 165 
+           Q55 175 60 185 
+           Q120 200 150 200 
+           H780 
+           Q800 180 800 160 
+           Q800 150 780 140 Z"
+        fill="#0A3D91"/>
+
+  <!-- Red Waterline Strip -->
+  <path d="M780 175 
+           H150 
+           Q120 178 75 185 
+           Q120 192 150 200 
+           H780 
+           Q800 180 800 160 
+           Q800 170 780 175 Z"
+        fill="#D3222A"/>
+
+  <!-- Containers (Editable) -->
+  <g id="containers">
+    <!-- Bottom Row -->
+    <rect x="180" y="105" width="70" height="40" fill="#0A3D91"/>
+    <rect x="255" y="105" width="70" height="40" fill="#D3222A"/>
+    <rect x="330" y="105" width="70" height="40" fill="#0A3D91"/>
+    <rect x="405" y="105" width="70" height="40" fill="#D3222A"/>
+    <rect x="480" y="105" width="70" height="40" fill="#0A3D91"/>
+    <rect x="555" y="105" width="70" height="40" fill="#D3222A"/>
+    <rect x="630" y="105" width="70" height="40" fill="#0A3D91"/>
+
+    <!-- Middle Row -->
+    <rect x="220" y="65" width="70" height="40" fill="#D3222A"/>
+    <rect x="295" y="65" width="70" height="40" fill="#0A3D91"/>
+    <rect x="370" y="65" width="70" height="40" fill="#D3222A"/>
+    <rect x="445" y="65" width="70" height="40" fill="#0A3D91"/>
+    <rect x="520" y="65" width="70" height="40" fill="#D3222A"/>
+
+    <!-- Top Row -->
+    <rect x="335" y="30" width="70" height="35" fill="#0A3D91"/>
+    <rect x="410" y="30" width="70" height="35" fill="#D3222A"/>
+  </g>
+
+  <!-- Bridge -->
+  <rect x="690" y="60" width="95" height="80" fill="#FFFFFF" rx="6"/>
+
+  <!-- Bridge Windows -->
+  <g id="windows">
+    <rect x="705" y="75" width="20" height="22" fill="#0A3D91" rx="3"/>
+    <rect x="732" y="75" width="20" height="22" fill="#0A3D91" rx="3"/>
+    <rect x="759" y="75" width="20" height="22" fill="#0A3D91" rx="3"/>
+  </g>
+
+  <!-- Chimney -->
+  <rect x="735" y="30" width="25" height="30" fill="#0A3D91" />
+
+  <!-- Rail -->
+  <rect x="680" y="140" width="125" height="6" fill="#FFFFFF"/>
+</svg>

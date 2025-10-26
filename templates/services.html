@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Services{% endblock %}
+
+{% block content %}
+    <!-- Banner Section -->
+    <div class="page-banner-area" style="background-image: url('{% static "images/banner/services.png" %}')";>
+        <div class="container-fluid text-center page-content">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Section -->
+    <section class="services-page py-5" id="services-page">
+        <div class="container-fluid text-center">
+            <!-- Header -->
+            <div class="row mb-4 px-5">
+                <h2 class="fw-semibold">Our Core Services</h2>
+                <p class="text-muted">
+                    At CABER Inspection Services Ltd, we deliver world-class inspection, testing, and certification services
+                    designed to ensure quality, safety, and compliance across industries.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center card-section">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspection of Bulk Cargoes</h5>
+                            <p class="card-text">
+                            Comprehensive inspection of bulk commodities including crude oil, petroleum products, solid minerals,
+                            and agricultural produce. We verify quality, quantity, and integrity using international standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Crude Oil and Gas Inspection</h5>
+                            <p class="card-text">
+                            Specialized inspection, sampling, and analysis of crude oil, refined products, and natural gas to
+                            guarantee operational integrity, loss control, and contractual compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Certification</h5>
+                            <p class="card-text">
+                            Independent testing and certification of manufactured and semi-manufactured goods in line with
+                            ISO, ASTM, BS, API, and SONCAP standards — ensuring safety, reliability, and export readiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Shipping Logistics & Protocols</h5>
+                            <p class="card-text">
+                            End-to-end maritime supervision, vessel monitoring, and documentation services to ensure smooth cargo
+                            movement, proper stowage, and compliance with port regulations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Custody Transfer Documentation</h5>
+                            <p class="card-text">
+                            Preparation and verification of Bills of Lading, quantity certificates, and sampling reports to ensure
+                            transparent ownership, fiscal accountability, and fair trade settlements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Laboratory Testing & Calibration</h5>
+                            <p class="card-text">
+                            State-of-the-art laboratory and field testing for crude oil, gas, minerals, and industrial products,
+                            including calibration of storage tanks, pipelines, and flow meters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+    
+    <!-- Process Section -->
+    <section class="process py-5" id="process" style="background-image: url('{% static "images/process/process-bg.png" %}')">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold mb-2">Our Process</h2>
+                <p class="mb-0 mx-auto" style="max-width: 700px;">
+                    At CABER Inspection Services Ltd, we follow a systematic process built on precision, transparency, and compliance.
+                    From assessment and sampling to laboratory testing and certification, every stage ensures accuracy and client confidence.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="row justify-content-center align-items-stretch g-4 text-center fade-up">
+
+                <!-- Step 1 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Assessment & Planning</h6>
+                            <p class="small mb-0">
+                            Understanding project requirements, identifying key objectives, and defining inspection parameters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Inspection & Sampling</h6>
+                            <p class="small mb-0">
+                            Field inspections and sample collection following safety and international standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Testing & Verification</h6>
+                            <p class="small mb-0">
+                            Laboratory analysis and verification to ensure compliance with international benchmarks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Certification & Reporting</h6>
+                            <p class="small mb-0">
+                            Issuing reports and certifications, providing complete transparency and client assurance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Process Section -->
+{% endblock %}

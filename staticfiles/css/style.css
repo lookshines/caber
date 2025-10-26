@@ -1,12 +1,23 @@
 :root {
-    --primary-color: #003366;     /* Deep navy blue - for Navbar */
-    --topbar-bg: #002147;         /* Slightly darker navy - for Topbar */
-    --accent-color: #F4C542;      /* Gold highlight */
-    --light-color: #F7F8FA;       /* Light background */
-    --dark-color: #1C1C1C;        /* Text */
-    --secondary-color: #6DA5A3;   /* Soft teal */
-    --nav-border-color: #E0E4EB;  /* Subtle divider line */
-    --nav-hover-bg: #002244;      /* Slightly darker hover shade */
+    --matrix: #ad6658;            /* Primary accent color */
+    --concrete: #f3f1f1;          /* Light background */
+    --armadillo: #454037;         /* Dark text color */
+    --pale-oyster: #978a7e;       /* Secondary text/borders */
+    --millbrook: #69493b;         /* Dark accent */
+    --cotton-seed: #bdbbb9;       /* Light accent */
+    --brandy-rose: #b78e82;
+    --teal-blue: #0F4C5C;       /* Contrast Accent */
+    
+    /* Mapping to semantic variables */
+    --primary-color: var(--concrete);     /* Light background for navbar */
+    --topbar-bg: var(--matrix);          /* Matrix for topbar */
+    --accent-color: var(--matrix);        /* Matrix as accent */
+    --light-color: var(--concrete);       /* Concrete for light backgrounds */
+    --dark-color: var(--armadillo);       /* Armadillo for text */
+    --secondary-color: var(--pale-oyster);/* Pale oyster for secondary elements */
+    --nav-border-color: var(--cotton-seed); /* Cotton seed for borders */
+    --nav-hover-bg: var(--brandy-rose); /* Brandy rose for hover states */
+    --contrast-color: var(--teal-blue);   
 }
 
 /* ===== GLOBAL TYPOGRAPHY ===== */
@@ -79,7 +90,7 @@ section h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  color: #F4C542; /* Gold accent, readable on dark or light backgrounds */
+  color: var(--accent-color); /* Gold accent, readable on dark or light backgrounds */
   letter-spacing: 0.5px;
   text-transform: uppercase;
   position: relative;
@@ -133,7 +144,7 @@ section h2::after {
 }
 
 .topbar a:hover {
-  color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 @media (max-width: 768px) {
@@ -152,30 +163,31 @@ section h2::after {
 
 /* ===== NAVBAR ===== */
 .navbar {
-  background-color: var(--primary-color);
-  border-top: 2px solid var(--accent-color);
-  border-bottom: 1px solid var(--nav-border-color);
+  background-color: var(--concrete);
+  border-top: 2px solid var(--matrix);
+  border-bottom: 1px solid var(--cotton-seed);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Brand Text */
-.navbar-brand .brand-text span:first-child {
-  color: var(--light-color); /* "Carber" white for clarity */
+.navbar-brand .brand-text span {
+  color: var(--matrix); /* Matrix color for brand */
   font-size: 1.25rem;
   font-weight: 600;
 }
 
 .navbar-brand .brand-text span:last-child {
-  color: #C7D4E2 !important;  /* softer gray-blue for contrast */
+  color: var(--pale-oyster) !important;  /* Pale oyster for subtitle */
   font-size: 0.85rem;
   letter-spacing: 0.3px;
 }
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-  color: var(--light-color);
+  color: var(--armadillo);
   font-weight: 500;
   letter-spacing: 0.4px;
   transition: all 0.3s ease;
@@ -184,8 +196,8 @@ section h2::after {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: var(--accent-color);
-  background-color: var(--nav-hover-bg);
+  color: var(--light-color);
+  background-color: var(--millbrook);
   border-radius: 4px;
 }
 
@@ -223,8 +235,8 @@ section h2::after {
 
 /* ===== SERVICE SECTION ===== */
 .services {
-  background: linear-gradient(135deg, #002147 0%, #001730 100%); /* deep navy gradient */
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--millbrook) 0%, var(--matrix) 100%);
+  color: var(--concrete);
   position: relative;
   overflow: hidden;
 }
@@ -243,9 +255,6 @@ section h2::after {
 }
 
 /* Header inherits global h2 style */
-.services h2 {
-  color: var(--accent-color);
-}
 .services h2::after {
   background-color: #fff;
 }
@@ -290,7 +299,7 @@ section h2::after {
 
 /* Hover: background + icon + text color */
 .services ul li:hover {
-  background-color: var(--accent-color);
+  background-color: var(--light-color);
   transform: translateY(-3px);
 }
 
@@ -432,7 +441,6 @@ section h2::after {
 /* ===== FUN FACT SECTION ===== */
 .funfact {
   position: relative;
-  background: url("{% static 'images/backgrounds/texture-bg.jpg' %}") center/cover no-repeat; /* replace with your texture image */
   color: #ffffff;
   padding: 80px 0;
   z-index: 1;
@@ -476,8 +484,8 @@ section h2::after {
 .funfact h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--accent-color);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  color: var(--brandy-rose);
+  text-shadow: 0 2px 6px rgba(69, 64, 55, 0.25);
 }
 
 /* Label text */
@@ -524,7 +532,7 @@ section h2::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 34, 68, 0.8); /* dark navy overlay */
+  background: rgba(69, 64, 55, 0.8); /* armadillo overlay */
   z-index: 1;
 }
 
@@ -671,7 +679,6 @@ section h2::after {
 
 /* Section Header */
 .contactform h2 {
-  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -720,18 +727,18 @@ section h2::after {
 
 /* Submit Button */
 .contactform .btn {
-  background-color: var(--accent-color);
-  color: var(--dark-color);
+  background-color: var(--matrix);
+  color: var(--concrete);
   border: none;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .contactform .btn:hover {
-  background-color: var(--primary-color);
-  color: #ffffff;
+  background-color: var(--millbrook);
+  color: var(--concrete);
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 51, 102, 0.25);
+  box-shadow: 0 6px 15px rgba(173, 102, 88, 0.25);
 }
 
 /* Illustration Image */
@@ -862,8 +869,8 @@ section h2::after {
 
 /* ===== FOOTER SECTION ===== */
 .footer {
-  background: linear-gradient(135deg, #f9fafc 0%, #edf2f7 100%);
-  color: #333;
+  background: linear-gradient(135deg, var(--concrete) 0%, var(--cotton-seed) 10%);
+  color: var(--armadillo);
   position: relative;
   overflow: hidden;
   padding-top: 70px;
@@ -1050,3 +1057,478 @@ section h2::after {
   pointer-events: auto;
 }
 
+
+/* === Page Banner Area === */
+.page-banner-area {
+  position: relative;
+  padding-top: 285px;
+  padding-bottom: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.page-banner-area .page-content h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #F2C94C;
+}
+
+.page-banner-area .page-content ul {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.page-banner-area .page-content ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.page-banner-area .page-content ul li a {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.page-banner-area .page-content ul li a:hover {
+  color: #F2C94C;
+}
+.page-banner-area .page-content ul li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -19px;
+  width: 2px;
+  height: 20px;
+  background-color: #FFFFFF;
+  transform: rotate(25deg);
+}
+.page-banner-area .page-content ul li:last-child {
+  margin-right: 0;
+}
+.page-banner-area .page-content ul li:last-child::before {
+  display: none;
+}
+
+/* === About Page === */
+.skill-bar .bar {
+  margin: 22px 0;
+}
+.skill-bar .bar:first-child {
+  margin-top: 0;
+}
+.skill-bar .bar:last-child {
+  margin-bottom: 0px;
+}
+.skill-bar .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bar .bar .info span {
+  font-size: 18px;
+  color: var(--contrast-color);
+  margin-bottom: 5px;
+}
+.skill-bar .bar .progress-line {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #E8E8E8;
+  border-radius: 30px;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.skill-bar .bar .progress-line span {
+  height: 4px;
+  border-radius: 5px;
+  width: 80%;
+  background: var(--dark-color);
+  border-radius: 5px;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  margin-bottom: 0;
+}
+.skill-bar .bar .progress-line span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--dark-color);
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.skill-bar .bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -38px;
+  color: var(--dark-color);
+  font-size: 18px;
+  padding: 1px 8px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.skill-bar .bar .quality1 span::after {
+  content: "98%";
+}
+.skill-bar .bar .quality2 span::after {
+  content: "95%";
+}
+.skill-bar .bar .quality3 span::after {
+  content: "96%";
+}
+.skill-bar .bar .quality4 span::after {
+  content: "94%";
+}
+.skill-bar .bar .quality5 span::after {
+  content: "97%";
+}
+.skill-bar .bar .quality6 span::after {
+  content: "99%";
+}
+
+.skill-bar .bar .quality1 span {
+  width: 98%;
+}
+.skill-bar .bar .quality2 span {
+  width: 95%;
+}
+.skill-bar .bar .quality3 span {
+  width: 96%;
+}
+.skill-bar .bar .quality4 span {
+  width: 94%;
+}
+.skill-bar .bar .quality5 span {
+  width: 97%;
+}
+.skill-bar .bar .quality5 span {
+  width: 99%;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* === SERVICE SECTION ON SERVICE PAGE === */
+.services-page {
+  background: linear-gradient(135deg, var(--concrete) 0%, var(--cotton-seed) 100%);
+  color: var(--concrete);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional subtle pattern overlay */
+.services-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+}
+
+/* Header inherits global h2 style */
+.services-page h2::after {
+  background-color: #fff;
+}
+
+/* Intro paragraph */
+.services-page p {
+  color: #dbe3f0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.card-section {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.service-card {
+  background: linear-gradient(180deg, rgba(69, 64, 55, 0.4), rgba(69, 64, 55, 0.2));
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 1.35rem;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.35s cubic-bezier(.2,.9,.2,1), box-shadow 0.35s ease, border-color 0.25s ease;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.service-card:focus-within,
+.service-card:focus {
+  outline: none;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18), 0 0 0 4px rgba(173,102,88,0.08);
+  border-color: rgba(173,102,88,0.18);
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+  border-color: rgba(173,102,88,0.2);
+}
+
+.service-card .card-body { /* remove default card padding so layout is tighter */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1 1 auto;
+}
+
+.service-card .card-title {
+  color: var(--matrix);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.service-card .card-text {
+  font-size: 0.97rem;
+  color: rgba(243,241,241,0.9); /* readable on darker service background */
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
+}
+
+/* Optional small icon block if you add an <i class="icon"> inside the card body */
+.service-card .icon {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  color: var(--matrix);
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+/* small CTA / read-more anchor inside card */
+.service-card .card-cta {
+  margin-top: 0.6rem;
+  align-self: flex-start;
+  color: var(--concrete);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+.service-card .card-cta:hover,
+.service-card .card-cta:focus {
+  background: var(--matrix);
+  color: var(--concrete);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .service-card { padding: 1rem; min-height: auto; }
+  .service-card .card-title { font-size: 1rem; }
+}
+
+/* === HSE SECTION === */
+.hse-page {
+  background: linear-gradient(135deg, var(--concrete) 0%, var(--cotton-seed) 100%);
+  color: var(--armadillo);
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem; /* easier to scale responsively */
+  line-height: 1.8;
+}
+
+/* Optional subtle pattern overlay */
+.hse-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+}
+
+/* Section headings */
+.hse-page h2 {
+  font-size: 2.5rem;
+  color: var(--armadillo);
+  position: relative;
+  display: inline-block;
+}
+
+.hse-page h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ad6658; /* theme highlight */
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.hse-page h3 {
+  color: var(--armadillo);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.hse-page p,
+.hse-page .lead {
+  color: var(--armadillo);
+  margin-bottom: 1.5rem;
+}
+
+/* List styling */
+.hse-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.hse-list li {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  position: relative;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.hse-list li::before {
+  content: "✔";
+  color: #ad6658; /* theme accent */
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Paragraph after list */
+.hse-note {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+/* ===== CONTACT PAGE SECTION ===== */
+.contact-page {
+  background: #ffffff;
+  color: #ffffff;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative overlay (optional soft texture or pattern feel) */
+.contact-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 30px 30px;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.contact-page .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Contact cards */
+.contact-page .contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-page .contact-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 24px rgba(244, 197, 66, 0.25);
+  border-color: var(--accent-color);
+}
+
+/* Icon styling */
+.contact-page .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-page .icon-wrapper i {
+  font-size: 3rem;
+  color: var(--accent-color);
+  transition: all 0.4s ease;
+}
+
+.contact-page .contact-card:hover .icon-wrapper i {
+  color: var(--teal-blue);
+  transform: scale(1.1);
+}
+
+/* Text styling */
+.contact-page h3 {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.contact-page p {
+  color: var(--teal-blue);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-page {
+    padding: 60px 0;
+  }
+
+  .contact-page .icon-wrapper i {
+    font-size: 2.5rem;
+  }
+
+  .contact-page h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-page p {
+    font-size: 0.95rem;
+  }
+}

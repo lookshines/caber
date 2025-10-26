@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About us{% endblock %}
+
+{% block content %}
+    <div class="page-banner-area" style="background-image: url('{% static "images/banner/about-us.png" %}')";>
+        <div class="container-fluid text-center page-content">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Side (Image + Mission Text) -->
+                <div class="col-lg-6 position-relative">
+                    <div class="px-5">           
+                        <img class="img-fluid" src="{% static 'images/about/about.jpg' %}" alt="">
+                    </div>
+                </div>
+
+                <!-- Right Side (About Text) -->
+                <div class="right-side col-lg-6">
+                    <h2 class="mb-3">About Caber</h2>
+                    <div class="">
+                        <p class="mb-3 ">
+                        At CABER Inspection Services Ltd, we are a proudly Nigerian-owned inspection company delivering trusted inspection, testing, certification, and verification services across multiple industries.
+                        </p>
+                        <p class="mb-3">
+                        With decades of combined experience, our experts ensure that every product, shipment, and operation meets international standards of quality, safety, and compliance. Through strong partnerships with global laboratories, we blend local knowledge with world-class expertise to provide accurate and reliable results.
+                        </p>
+                        <p class="mb-0">
+                        Supported by state-of-the-art laboratories and a multidisciplinary team of professionals, CABER offers complete technical assurance — from production quality control to trade verification and compliance audits. We remain committed to transparency, integrity, and regulatory excellence, helping clients achieve confidence and value in every transaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Qualities -->
+    <section class="qualities" id="qualities">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 px-5 py-5">
+                    <h2>Why Choose Us</h2>
+                    <p>
+                        At CABER Inspection Services Ltd, we stand out as a trusted partner in quality assurance, inspection, and certification across industries. Our reputation is built on accuracy, integrity, and professionalism — ensuring every service we deliver meets the highest international standards. With a deep understanding of both local and global compliance frameworks, we bridge technical expertise with transparency and efficiency to protect your business interests from production to shipment.
+                        <br><br>
+                        Our team of seasoned professionals — including engineers, chemists, surveyors, and maritime experts — combine advanced analytical methods with state-of-the-art technology to deliver dependable, verifiable, and timely results. Whether it’s oil and gas inspection, product certification, or custody transfer documentation, CABER provides the confidence and clarity you need for smooth trade operations and regulatory compliance.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-6 px-5 py-5">
+                    <h2>Our Core Strengths</h2>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="info">
+                                <span>Quality Assurance & Accuracy</span>
+                            </div>
+                            <div class="progress-line quality1"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Timely Service Delivery</span>
+                            </div>
+                            <div class="progress-line quality2"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Regulatory Compliance Expertise</span>
+                            </div>
+                            <div class="progress-line quality3"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Technical Competence & Innovation</span>
+                            </div>
+                            <div class="progress-line quality4"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Customer Satisfaction & Reliability</span>
+                            </div>
+                            <div class="progress-line quality5"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Transparency & Integrity</span>
+                            </div>
+                            <div class="progress-line quality6"> <span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Fun Fact Section -->
+    <section class="funfact py-5" id="funfact">
+        <div class="container">
+            <div class="row text-center gy-4">
+            
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=21>0</h1>
+                    <p class="mb-0">Completed Projects</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=32>0</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=15>0</h1>
+                    <p class="mb-0">Our Awards</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=3000>0</h1>
+                    <p class="mb-0">Satisfied Employees</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Fun Fact Section -->
+
+{% endblock %}
