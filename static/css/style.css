@@ -134,7 +134,7 @@ section h2::after {
 }
 
 .topbar i {
-  color: var(--accent-color);
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
