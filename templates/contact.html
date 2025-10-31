@@ -81,55 +81,40 @@
 
                 <!-- Image or Contact Illustration -->
                 <div class="contactform col-12 col-lg-6">
-                    <form class="p-3 border rounded">
+                    <form class="p-3 border rounded" method="POST">
+                    {% csrf_token %}
                     <h3>Get in Touch</h3>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input 
-                            type="text" 
-                            class="form-control" 
-                            id="name" 
-                            name="name" 
-                            placeholder="Your full name" 
-                            required>
+                        <label for="{{ form.fullname_id_for_label }}" class="form-label">Name</label>
+                        {{ form.fullname }}
                     </div>
 
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input 
-                            type="email" 
-                            class="form-control" 
-                            id="email" 
-                            name="email" 
-                            placeholder="your@email.com" 
-                            required>
+                        <label for="{{ form.email_id_for_label }}" class="form-label">Email</label>
+                        {{ form.email }}
                     </div>
 
                     <div class="mb-3">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input 
-                            type="tel" 
-                            class="form-control" 
-                            id="phone" 
-                            name="phone" 
-                            placeholder="Your phone number">
+                        <label for="{{ form.phone_id_for_label }}" class="form-label">Phone</label>
+                        {{ form.phone }}
                     </div>
 
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea 
-                            class="form-control" 
-                            id="message" 
-                            name="message" 
-                            rows="5" 
-                            placeholder="Write your message..." 
-                            required></textarea>
+                        <label for="{{ form.message_id_for_label }}" class="form-label">Message</label>
+                        {{ form.message }}
                     </div>
 
                     <div class="text-end">
                         <button type="submit" class="btn btn-outline-secondary px-4">Send Message</button>
                     </div>
                     </form>
+                    {% if messages %}
+                        <div class="alert-messages">
+                            {% for message in messages %}
+                                <div class="alert alert-success">{{ message }}</div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                     
                 </div>
 
